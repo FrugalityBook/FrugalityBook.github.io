@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="/css/index.css" />
     <link rel="shortcut icon" href="/assets/favicon.jpg" type="image/x-icon">
     <style>
-        .booksCat a:nth-child(3){
+        .booksCat a:nth-child(4){
             background-color: #faafba;
         }
     </style>
@@ -75,8 +75,8 @@
         <div class="booksCat">
             <a href="/html/index.html">New Arrival</a>
             <a href="/html/romance.html">Romance</a>
-            <a href="">Motivation</a>
-            <a >History</a>
+            <a href="/html/motivation.html">Motivation</a>
+            <a href="">History</a>
             <a >Economic</a>
             <a >Buddha</a>
             <a >Education</a>
@@ -93,7 +93,7 @@
                 <span class="material-icons">
                     library_books
                 </span>
-                <span class="textArrival">motivation</span>
+                <span class="textArrival">History</span>
             </div>
             <div class="picture">
                 <div class="pic">
@@ -109,21 +109,21 @@
       title: "Discovering the Power of Positive Thinking",
       author: "Norman Vincent ",
       price: "10$",
-      category: "Motivation",
+      category: "History",
     },
     {
       url: "https://images-na.ssl-images-amazon.com/images/I/81+YUR9faBL.jpg",
       title: "To all the boys I've loved before",
       author: "Norman Vincent ",
       price: "10$",
-      category: "Motivation",
+      category: "History",
     },
     {
       url: "https://m.media-amazon.com/images/I/517MT5F7NOL.jpg",
       title: "Motivational Quotes Book",
       author: "James Smith",
       price: "10$",
-      category: "Motivation",
+      category: "History",
     },
    
     
@@ -132,21 +132,21 @@
       title: "Green Mile",
       author: "Robert.Kiyosaki",
       price: "10$",
-      category: "Motivatione",
+      category: "History",
     },
     {
       url: "https://images-na.ssl-images-amazon.com/images/I/51bhhK6yobL._SX331_BO1,204,203,200_.jpg",
       title: "The Shinning",
       author: "Stephen King",
       price: "10$",
-      category: "Motivationr",
+      category: "History",
     },
     
     
   ];
   
           var getElement = document.getElementsByClassName('pic')[0];
-          bookInfor.filter(item=>item.category.includes("Motivation")).map((item,index)=>{
+          bookInfor.filter(item=>item.category.includes("History")).map((item,index)=>{
               getElement.innerHTML=getElement.innerHTML+
                `
                   <div class="hi">
