@@ -1,0 +1,216 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  padding:10px 50px;
+}
+.header {
+  background: linear-gradient( rgba(254, 255, 254, 0.1) ,rgba(39, 36, 36, 0.9)) ,url(../assets/logo1.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 45vh;
+  position: relative;
+}
+.quote{
+  position: absolute;
+  padding-top:70px;
+  padding-left:50px;
+}
+.quote>#person{
+  margin-left: 100px;
+}
+ul {
+  height: 7vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+li a {
+  text-decoration: none;
+  color: black;
+  font-size: 15pt;
+  border-left: 3px solid rgb(24, 21, 21);
+  height:100%;
+}
+
+.nav {
+  background-color: rgb(241, 74, 74);
+  margin-top: 5px;
+}
+li:hover a {
+  color: teal;
+}
+
+.icon {
+  vertical-align: sub;
+  margin-right: 5px;
+}
+
+.books {
+  display: grid;
+  grid-template-columns: 15% 0.5% 84.5% ;
+  height: 48vh;
+}
+
+.books>.booksCat {
+  background-color: rgb(228, 99, 99);
+  margin-top: 5px;
+}
+
+.other{
+  display: grid;
+  grid-template-rows: 4% 48% 48%;
+}
+.other>#h1 {
+  background-color: rgb(240, 22, 22);
+}
+
+.other>#h2 {
+  height: 15vh;
+}
+
+.other>#h1>img {
+  width: 100%;
+  height: 100%;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.booksCat>a {
+  display: block;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 50px;
+  color:black;
+  text-align: center;
+  border-bottom:1px dotted black;
+}
+.booksCat>a:hover{
+  background-color: rgb(119, 164, 247);
+}
+.picture >.pic{
+  display:grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.pic {
+  width: 100%;
+  height: 100%;
+  margin-bottom:-20px;
+}
+
+.pic>.hi> a img {
+  width: 200px;
+  height:300px;
+  margin-top:15px;
+}
+
+.arrival {
+  width: 100%;
+  margin-top:10px;
+  margin-left: 5px;
+  padding-bottom:25px;
+  border-bottom: 5px solid rgb(235, 112, 112);
+}
+
+.textArrival>a {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.arrival>.material-icons {
+  vertical-align: sub;
+}
+.hi{
+  padding:5px;
+}
+.hi>input{
+  border:1px solid blue;
+  border-radius: 5px;
+  background-color: aqua;
+  padding:5px;
+  margin-left:8px;
+}
+.header>#search{
+  margin-top:280px;
+  margin-left:20px;
+  width:300px;
+  height:30px;
+  border-radius: 15px;
+  border:2px solid blue;
+  outline:none;
+  padding-left:3px;
+  background-color:blanchedalmond
+}
+.footer1{
+  background-color: aqua;
+  width:100%;
+  margin-top:40px;
+  height:30vh;
+  margin-top:545px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height:100%;
+}
+.container {
+  flex:1;
+  /* same as flex-grow: 1; */
+}
+
+.ft-main {
+  padding: 1.25rem 1.875rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ft-main-item {
+  padding: 1.25rem;
+  min-width: 12.5rem
+      /*200px*/
+  ;
+}
+
+.ft-social {
+  padding: 0 1.875rem 1.25rem;
+}
+
+
+
+footer {
+  background-color: rgb(243, 73, 73);
+   color:#bbb;
+  line-height: 1.5;
+}
+
+footer a {
+  text-decoration: none;
+  color: rgb(5, 4, 4);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.ft-title {
+  display: block;
+   color:rgb(15, 13, 13);
+  font-family: ’Merriweather’, serif;
+  font-size: 1.375rem;
+  padding-bottom: 0.625rem;
+}
+.ft-main-item>a{
+  display: block;
+}
+.icons{
+  color:rgb(14, 11, 11);
+  margin-top:60px;
+  margin-left:150px;
+}
+.icons>i{
+  margin:10px;
+}
