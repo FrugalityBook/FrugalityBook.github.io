@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
   <link rel="stylesheet" href="/css/style.css" />
   <link rel="shortcut icon" href="/assets/favicon.jpg" type="image/x-icon" />
+  <script src="https://kit.fontawesome.com/a5f0134252.js" crossorigin="anonymous"></script>
   <style>
     .booksCat a:nth-child(2) {
       background-color: #faafba;
@@ -58,7 +59,7 @@
   <div class="books">
     <div class="booksCat">
       <a href="../index.html">New Arrival</a>
-      <a href="/html/romance.html">Romance</a>
+      <a  style="background-color: green" href="/html/romance.html">Romance</a>
       <a href="../categories/motivation.html">Motivation</a>
       <a>History</a>
       <a>Economic</a>
@@ -82,7 +83,48 @@
       </div>
     </div>
   </div>
- 
+  <div class="footer1" style="margin-top:310px">
+    <div class="container"></div>
+    <footer>
+        <!-- Footer main -->
+        <section class="ft-main">
+            <div class="ft-main-item">
+                <h2 class="ft-title">About us</h2>
+               
+                    <a href="#">Services</a>
+                    <a href="#">Members</a>
+                    <a href="#">Website</a>
+            
+               
+            </div>
+            <div class="ft-main-item">
+                <h2 class="ft-title">Categories</h2>
+              
+                    <a href="#">Entertainments</a>
+                    <a href="#">Histories</a>
+                    <a href="#">Romance</a>
+                    <a href="#">Political</a>
+                    <a href="#">Others</a>
+               
+            </div>
+            <div class="ft-main-item">
+                <h2 class="ft-title">Contact</h2>
+               
+                    <a href="#">Help</a>
+                    <a href="#">Sales</a>
+                    <a href="#">Donate</a>
+               
+            </div>
+            <div class="icons">
+                <i style="font-size: 25px;padding:3px;" class="fab fa-facebook"></i>
+                <i style="font-size: 25px;padding:3px;" class="fas fa-at"></i>
+                <i style="font-size: 25px;padding:3px;" class="fas fa-phone-square-alt"></i>
+
+            </div>
+        </section>
+
+    </footer>
+  </div>
   <script>
     Book = JSON.parse(localStorage.getItem("books"))
      console.log(Book);
