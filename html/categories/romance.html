@@ -8,12 +8,12 @@
   <title>Frugality Book</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
   <link rel="stylesheet" href="/css/style.css" />
-  <link rel="shortcut icon" href="/assets/favicon.jpg" type="image/x-icon" />
   <script src="https://kit.fontawesome.com/a5f0134252.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="/front-end/assets/favicon.jpg" type="image/x-icon" />
   <style>
-    .booksCat a:nth-child(2) {
+    /* .booksCat a:first-child {
       background-color: #faafba;
-    }
+    } */
   </style>
 </head>
 
@@ -30,46 +30,46 @@
         <p id="person"><i>-Franklin P.Jones</i></p>
       </span>
     </div>
-    <i class="material-icons icon" style="color: white; margin-left: 25px; vertical-align: sub">search</i>
-    <input id="search" type="text" placeholder=" Search bookbookTitles here..." />
+    <!-- <i class="material-icons icon" style="color: white; margin-left: 25px; vertical-align: sub">search</i>
+    <input id="search" type="text" placeholder=" Search book titles here..." /> -->
   </div>
   <div class="nav">
     <ul style="list-style: none" id="subNav">
       <li class="">
         <a href="/html/Login.html"><i class="material-icons icon">account_circle</i>Login</a>
-      </li>
+      
       <li class="">
         <a href="/html/sell.html"><i class="material-icons icon">sell</i>Sell</a>
-      </li>
+      
       <li class="">
-        <a href="#"><i class="material-icons icon">redeem</i>Read Free</a>
-      </li>
+        <a href="/html/readFree.html"><i class="material-icons icon">redeem</i>Read Free</a>
+      
       <li class="">
-        <a href="#"><i class="material-icons icon">money_off</i>Donate</a>
-      </li>
-      <li>
-        <a href="#">
+        <a href="/html/donate.html"><i class="material-icons icon">money_off</i>Donate</a>
+      
+     
+      
+        <a href="/html/bookDetail.html">
           <i class="material-icons icon">contact_support</i>Contact</a>
-      </li>
+      
       <li class="">
-        <a href="#"><i class="material-icons icon">group</i>About</a>
-      </li>
-    </ul>
+        <a href="./about.html"><i class="material-icons icon">group</i>About</a>
+      
+   
   </div>
   <div class="books">
     <div class="booksCat">
       <a href="../index.html">New Arrival</a>
-      <a  style="background-color: green" href="/html/romance.html">Romance</a>
-      <a href="../categories/motivation.html">Motivation</a>
-      <a>History</a>
-      <a>Economic</a>
-      <a>Buddha</a>
-      <a>Education</a>
-      <a>Religion</a>
-      <a>Continent</a>
-      <a>Asia</a>
-      <a href="/html/Horror.html">Horror</a>
-      <a>Season</a>
+      <a style="background-color: green;"href="./romance.html">Romance</a>
+      <a href="./motivation.html">Motivation</a>
+      <a href="./history.html">History</a>
+      <a href="./economic.html">Economic</a>
+      <a href="./religion.html">Religion</a>
+      <a href="./education.html">Education</a>
+      <a href="./continient.html">Continent</a>
+      <a href="./asian.html">Asian</a>
+      <a href="./horror.html">Horror</a>
+      <a href="./season.html">Seasons</a>
       <ul />
     </div>
     <div></div>
@@ -79,69 +79,200 @@
         <span class="textArrival">Romance</span>
       </div>
       <div class="picture">
-        <div class="pic"></div>
+        <div class="pic">
+
+        </div>
       </div>
+     
     </div>
-  </div>
-  <div class="footer1" style="margin-top:310px">
-    <div class="container"></div>
-    <footer>
-        <!-- Footer main -->
-        <section class="ft-main">
-            <div class="ft-main-item">
-                <h2 class="ft-title">About us</h2>
-               
-                    <a href="#">Services</a>
-                    <a href="#">Members</a>
-                    <a href="#">Website</a>
-            
-               
-            </div>
-            <div class="ft-main-item">
-                <h2 class="ft-title">Categories</h2>
+    
+    </div>
+    <div class="footer1" style="margin-top:460px">
+      <div class="container"></div>
+      <footer>
+          <!-- Footer main -->
+          <section class="ft-main">
+              <div class="ft-main-item">
+                  <h2 class="ft-title">About us</h2>
+                 
+                      <a href="#">Services</a>
+                      <a href="#">Members</a>
+                      <a href="#">Website</a>
               
-                    <a href="#">Entertainments</a>
-                    <a href="#">Histories</a>
-                    <a href="#">Romance</a>
-                    <a href="#">Political</a>
-                    <a href="#">Others</a>
-               
-            </div>
-            <div class="ft-main-item">
-                <h2 class="ft-title">Contact</h2>
-               
-                    <a href="#">Help</a>
-                    <a href="#">Sales</a>
-                    <a href="#">Donate</a>
-               
-            </div>
-            <div class="icons">
-                <i style="font-size: 25px;padding:3px;" class="fab fa-facebook"></i>
-                <i style="font-size: 25px;padding:3px;" class="fas fa-at"></i>
-                <i style="font-size: 25px;padding:3px;" class="fas fa-phone-square-alt"></i>
-
-            </div>
-        </section>
-
-    </footer>
-  </div>
-  <script>
-    Book = JSON.parse(localStorage.getItem("books"))
-     console.log(Book);
-    var getElement = document.getElementsByClassName("pic")[0];
-    Book.filter((item) => item.bookCat.includes("Romance")).map((item, index) => {
-        getElement.innerHTML =
-          getElement.innerHTML +
-          `
+                 
+              </div>
+              <div class="ft-main-item">
+                  <h2 class="ft-title">Categories</h2>
+                
+                      <a href="#">Entertainments</a>
+                      <a href="./history.html">Histories</a>
+                      <a href="./romance.html">Romance</a>
+                      <a href="#">Political</a>
+                      <a href="#">Others</a>
+                 
+              </div>
+              <div class="ft-main-item">
+                  <h2 class="ft-title">Contact</h2>
+                 
+                      <a href="#">Help</a>
+                      <a href="./sell.html">Sales</a>
+                      <a href="./donate.html">Donate</a>
+                 
+              </div>
+              <div class="icons">
+                  <i style="font-size: 25px;padding:3px;" class="fab fa-facebook"></i>
+                  <i style="font-size: 25px;padding:3px;" class="fas fa-at"></i>
+                  <i style="font-size: 25px;padding:3px;" class="fas fa-phone-square-alt"></i>
+  
+              </div>
+          </section>
+  
+      </footer>
+    </div>
+    <script>
+      var bookInfor = [
+        {
+          url: "https://images-na.ssl-images-amazon.com/images/I/81D-gdnku+L.jpg",
+          title: "They Both Die at the End",
+          author: "Adam Silvera",
+          price: "10$",
+          category: "Romance",
+        },
+        {
+          url: "https://images-na.ssl-images-amazon.com/images/I/71I0yJf5h8L.jpg",
+          title: "To all the boys I've loved before",
+          author: "Jenny Han",
+          price: "10$",
+          category: "Romance",
+        },
+        {
+          url: "https://images-na.ssl-images-amazon.com/images/I/61JS5pSCQqL.jpg",
+          title: "P.S. I still love you",
+          author: "Jenny Han",
+          price: "10$",
+          category: "Romance",
+        },
+        {
+          url: "https://images-na.ssl-images-amazon.com/images/I/71aKL1ss9KL.jpg",
+          title: "Always and Forever",
+          author: "Jenny Han",
+          price: "10$",
+          category: "Romance",
+        },
+        {
+          url: "https://m.media-amazon.com/images/I/41nngxCNKxL.jpg",
+          title: "IT",
+          author: "Stphen King",
+          price: "10$",
+          category: "Horror",
+        },
+        {
+          url: "https://images-na.ssl-images-amazon.com/images/I/81uQocUlNcL.jpg",
+          title: "Green Mile",
+          author: "Stephen King",
+          price: "10$",
+          category: "Crime",
+        },
+        {
+          url: "http://prodimage.images-bn.com/pimages/9780345806789_p0_v2_s1200x630.jpg",
+          title: "The Shinning",
+          author: "Stephen King",
+          price: "10$",
+          category: "Horror",
+        },
+        {
+          url: "https://m.media-amazon.com/images/I/41tATg+hmiL.jpg",
+          title: "The Long Walk",
+          author: "Stephen King",
+          price: "10$",
+          category: "Horror",
+        },
+        {
+          url: "https://m.media-amazon.com/images/I/51jv4ITqI6L.jpg",
+          title: "The Outsider",
+          author: "Stephen King",
+          price: "10$",
+          category: "Horror",
+        },
+        {
+          url: "https://images-na.ssl-images-amazon.com/images/I/918KkftCUFL.jpg",
+          title: "13 Reasons Why",
+          author: "Jay Asher",
+          price: "10$",
+          category: "Romance",
+        },
+        {
+          url: "https://images-na.ssl-images-amazon.com/images/I/918KkftCUFL.jpg",
+          title: "13 Reasons Why",
+          author: "Jay Asher",
+          price: "10$",
+          category: "Romance",
+        },
+        {
+          url: "https://images-na.ssl-images-amazon.com/images/I/81zqDem9OvL.jpg",
+          title: "Salem's Lot",
+          author: "Stephen King",
+          price: "10$",
+          category: "Horror",
+        },
+        {
+          url: "https://images-na.ssl-images-amazon.com/images/I/71xJ9gBHTdL.jpg",
+          title: "Good bye summer Hello Autumn",
+          author: "Kenard Tat",
+          price: "10$",
+          category: "Seasons",
+        },
+        {
+          url: "https://images-na.ssl-images-amazon.com/images/I/71xJ9gBHTdL.jpg",
+          title: "Good bye summer Hello Autumn",
+          author: "Kenard Tat",
+          price: "10$",
+          category: "Seasons",
+        },
+        {
+          url: "https://images-na.ssl-images-amazon.com/images/I/71xJ9gBHTdL.jpg",
+          title: "Good bye summer Hello Autumn",
+          author: "Kenard Tat",
+          price: "10$",
+          category: "Seasons",
+        },
+      ];
+      var getElement = document.getElementsByClassName("pic")[0];
+      bookInfor
+        .filter((item) => item.category.includes("Romance"))
+        .map((item, index) => {
+          getElement.innerHTML =
+            getElement.innerHTML +
+            `
                 <div class="hi">
-                    <a href="../bookDetail.html" target="_blank"> <img src="${item.bookLink}" alt="book"></a>
-                    <h4>Title:${item.bookTitle}</h4>
-                    <span>Author:${item.bookAuthor}</span><br>
-                    <span><b style="color:red;">bookPrice from : ${item.bookPrice}</b></span>
+                    <a href="/html/bookDetail.html" target="_blank"> <img src="${item.url}" alt="book"></a>
+                    <h4>Title:${item.title}</h4>
+                    <span>Author:${item.author}</span><br>
+                    <span><b style="color:red;">Price from : ${item.price}</b></span>
                 </div>
              `;
-      });
-  </script>
-</body>
-
+        });
+    </script>
+    <script>
+      var Book = JSON.parse(localStorage.getItem("books"));
+      // console.log(Book);
+      var getElement = document.getElementsByClassName("pic")[0];
+      if (Book.length > 0) {
+        Book.filter((item) => item.bookCat.includes("Romance")).map(
+          (item, index) => {
+            getElement.innerHTML =
+              getElement.innerHTML +
+              `
+                <div class="hi">
+                    <a href="/html/bookDetail.html" target="_blank"> <img src="${item.bookLink}" alt="book"></a>
+                    <h4>Title:${item.bookTitle}</h4>
+                    <span>Author:${item.bookAuthor}</span><br>
+                    <span><b style="color:red;">Price from : ${item.bookPrice}</b></span>
+                </div>
+             `;
+          }
+        );
+      }
+    </script>
+  </body>
 </html>
