@@ -29,14 +29,12 @@
           margin: 0px;
           box-sizing: 0px;
         }
-
-
         form {
           margin-top: 5%;
           text-align: center;
           outline: none;
+          background-repeat: no-repeat;
         }
-
         .form>input {
           width: 500px;
           height: 40px;
@@ -62,11 +60,23 @@
           padding: 8px;
           width: 200px;
         }
+        span{
+          font-size: 25pt;
+        }
+        img{
+          position:absolute;
+          z-index: -1;
+          width: 45vw;
+          top: 0px;
+          left: 28%;
+        }
       </style>
     </head>
 
     <body>
-      <form  >
+      <form>
+        <img src="https://365psd.com/images/istock/previews/2124/21244160-book-sale-background.jpg" alt="">
+        <span>Input your book's information</span>
         <div  class="form">
           <input id="bookLink" type="url" placeholder="Enter Book Picture(By Picture Link)" required><br><br>
           <input id="bookTitle" type="text" placeholder="Enter your Book title" required><br><br>

@@ -7,8 +7,7 @@ body {
   padding: 5px;
 }
 .header {
-  background: linear-gradient(rgba(254, 255, 254, 0.1), rgba(39, 36, 36, 0.9)),
-    url(/assets/photo_2021-10-09_18-44-16.jpg);
+  background: url(/assets/photo_2021-10-09_18-44-16.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 45vh;
@@ -54,7 +53,7 @@ li:hover a {
   display: grid;
   grid-template-rows: auto 100px;
   grid-template-columns: 15% auto;
-  gap: 10px;
+  column-gap: 10px;
 }
 .category {
   font-family: sans-serif;
@@ -104,17 +103,7 @@ li:hover a {
 }
 
 footer {
-  background: #ff416c; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #ff4b2b,
-    #ff416c
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #ff4b2b,
-    #ff416c
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-color: rgb(82, 178, 243);
 
   color: #bbb;
   line-height: 1.5;
