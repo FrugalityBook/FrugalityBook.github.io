@@ -8,7 +8,7 @@ body {
 }
 .header {
   background: linear-gradient(rgba(254, 255, 254, 0.1), rgba(39, 36, 36, 0.9)),
-    url(/assets/logo1.jpg);
+    url(/assets/photo_2021-10-09_18-44-16.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 45vh;
@@ -36,26 +36,15 @@ li a {
   font-size: 15pt;
   border-left: 3px solid rgb(24, 21, 21);
   height: 100%;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 .nav {
-  background: #ff416c; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to left,
-    #ff4b2b,
-    #ff416c
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to left,
-    #ff4b2b,
-    #ff416c
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  background-color: rgb(24, 241, 140);
   margin-top: 5px;
 }
 li:hover a {
-  color: teal;
+  color: rgb(66, 46, 238);
 }
-
 .icon {
   vertical-align: sub;
   margin-right: 5px;
@@ -65,20 +54,11 @@ li:hover a {
   display: grid;
   grid-template-rows: auto 100px;
   grid-template-columns: 15% auto;
-  column-gap: 10px;
+  gap: 10px;
 }
 .category {
-  background: #ff416c; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to top,
-    #ff4b2b,
-    #ff416c
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to top,
-    #ff4b2b,
-    #ff416c
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: sans-serif;
+  background-color: rgb(82, 178, 243);
 }
 .category > a {
   display: block;
@@ -91,7 +71,7 @@ li:hover a {
   border-bottom: 1px dotted black;
 }
 .category > a:hover {
-  background-color: rgb(119, 164, 247);
+  background-color: rgb(50, 118, 245);
 }
 .footer {
   background-color: aqua;
