@@ -74,7 +74,7 @@ var bookInfor = [
     title: "Salem's Lot",
     author: "Stephen King",
     price: "10$",
-    category: "Horror",
+    category: "Romance",
   },
 ];
 var getElement = document.getElementsByClassName("pic")[0];
@@ -126,4 +126,3 @@ bookInfor.map((item) => {
 //           </div>
 //     `;
 //   });
-  
