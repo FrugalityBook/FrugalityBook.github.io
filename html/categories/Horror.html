@@ -9,13 +9,8 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
-    <link rel="stylesheet" href="/css/style.css" />
     <link rel="shortcut icon" href="/assets/favicon.jpg" type="image/x-icon" />
-    <style>
-      .booksCat a:nth-child(10) {
-        background-color: #faafba;
-      }
-    </style>
+    <link rel="stylesheet" href="/css/index.css" />
   </head>
 
   <body>
@@ -34,16 +29,8 @@
           <p id="person"><i>-Franklin P.Jones</i></p>
         </span>
       </div>
-      <!-- <i
-        class="material-icons icon"
-        style="color: white; margin-left: 25px; vertical-align: sub"
-        >search</i
-      >
-      <input
-        id="search"
-        type="text"
-        placeholder=" Search book titles here..."
-      /> -->
+      <!-- <i class="material-icons icon" style="color: white; margin-left: 25px; vertical-align: sub">search</i>
+    <input id="search" type="text" placeholder=" Search book titles here..." /> -->
     </div>
     <div class="nav">
       <ul style="list-style: none" id="subNav">
@@ -52,7 +39,7 @@
             ><i class="material-icons icon">account_circle</i>Login</a
           >
         </li>
-        <li claub="">
+        <li class="">
           <a target="_blank" href="/html/sell.html"
             ><i class="material-icons icon">sell</i>Sell</a
           >
@@ -80,8 +67,8 @@
         </li>
       </ul>
     </div>
-    <div class="books">
-      <div class="booksCat">
+    <div class="wrap">
+      <div class="category">
         <a href="/index.html">New Arrival</a>
         <a href="/html/categories/romance.html">Romance</a>
         <a href="/html/categories/motivation.html">Motivation</a>
@@ -91,11 +78,11 @@
         <a href="/html/categories/education.html">Education</a>
         <a href="/html/categories/continient.html">Continent</a>
         <a href="/html/categories/asian.html">Asian</a>
-        <a href="/html/categories/Horror.html">Horror</a>
+        <a style="background-color: #faafba" href="/html/categories/Horror.html"
+          >Horror</a
+        >
         <a href="/html/categories/season.html">Seasons</a>
-        <ul />
       </div>
-      <div></div>
       <div class="other">
         <div class="arrival">
           <span class="material-icons"> library_books </span>
@@ -105,50 +92,48 @@
           <div class="pic"></div>
         </div>
       </div>
-    </div>
-    
-    </div>
-    <div class="footer1" style="margin-top:460px">
-      <div class="container"></div>
-      <footer>
+      <div class="footer">
+        <div class="container"></div>
+        <footer>
           <!-- Footer main -->
           <section class="ft-main">
-              <div class="ft-main-item">
-                  <h2 class="ft-title">About us</h2>
-                 
-                      <a href="#">Services</a>
-                      <a href="#">Members</a>
-                      <a href="#">Website</a>
-              
-                 
-              </div>
-              <div class="ft-main-item">
-                  <h2 class="ft-title">Categories</h2>
-                
-                      <a href="#">Entertainments</a>
-                      <a href="./history.html">Histories</a>
-                      <a href="./romance.html">Romance</a>
-                      <a href="#">Political</a>
-                      <a href="#">Others</a>
-                 
-              </div>
-              <div class="ft-main-item">
-                  <h2 class="ft-title">Contact</h2>
-                 
-                      <a href="#">Help</a>
-                      <a href="./sell.html">Sales</a>
-                      <a href="./donate.html">Donate</a>
-                 
-              </div>
-              <div class="icons">
-                  <i style="font-size: 25px;padding:3px;" class="fab fa-facebook"></i>
-                  <i style="font-size: 25px;padding:3px;" class="fas fa-at"></i>
-                  <i style="font-size: 25px;padding:3px;" class="fas fa-phone-square-alt"></i>
-  
-              </div>
+            <div class="ft-main-item">
+              <h2 class="ft-title">About us</h2>
+
+              <a href="#">Services</a>
+              <a href="#">Members</a>
+              <a href="#">Website</a>
+            </div>
+            <div class="ft-main-item">
+              <h2 class="ft-title">Categories</h2>
+
+              <a href="#">Entertainments</a>
+              <a href="../html/categories/history.html">Histories</a>
+              <a href="./categories/romance.html">Romance</a>
+              <a href="#">Political</a>
+              <a href="#">Others</a>
+            </div>
+            <div class="ft-main-item">
+              <h2 class="ft-title">Contact</h2>
+
+              <a href="#">Help</a>
+              <a href="./sell.html">Sales</a>
+              <a href="./donate.html">Donate</a>
+            </div>
+            <div class="icons">
+              <i
+                style="font-size: 25px; padding: 3px"
+                class="fab fa-facebook"
+              ></i>
+              <i style="font-size: 25px; padding: 3px" class="fas fa-at"></i>
+              <i
+                style="font-size: 25px; padding: 3px"
+                class="fas fa-phone-square-alt"
+              ></i>
+            </div>
           </section>
-  
-      </footer>
+        </footer>
+      </div>
     </div>
     <script>
       var bookInfor = [
