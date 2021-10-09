@@ -68,7 +68,7 @@ li:hover a {
 }
 .books {
   display: grid;
-  grid-template-columns: 15% 0.5% 84.5% ;
+  grid-template-columns: 15% 0.5% 84.5%;
   height: 48vh;
 }
 
@@ -112,7 +112,7 @@ li:hover a {
   color: black;
   font-size: 20px;
   line-height: 50px;
-  color:black;
+  color: black;
   text-align: center;
   border-bottom: 1px dotted black;
 }
@@ -172,4 +172,68 @@ li:hover a {
   outline: none;
   padding-left: 3px;
   background-color: white;
+}
+.footer1 {
+  background-color: aqua;
+  width: 100%;
+  margin-top: 40px;
+  height: 30vh;
+  margin-top: 545px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 100%;
+}
+.container {
+  flex: 1;
+  /* same as flex-grow: 1; */
+}
+
+.ft-main {
+  padding: 1.25rem 1.875rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ft-main-item {
+  padding: 1.25rem;
+  min-width: 12.5rem /*200px*/;
+}
+
+.ft-social {
+  padding: 0 1.875rem 1.25rem;
+}
+
+footer {
+  background-color: rgb(243, 73, 73);
+  color: #bbb;
+  line-height: 1.5;
+}
+
+footer a {
+  text-decoration: none;
+  color: rgb(5, 4, 4);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.ft-title {
+  display: block;
+  color: rgb(15, 13, 13);
+  font-family: ’Merriweather’, serif;
+  font-size: 1.375rem;
+  padding-bottom: 0.625rem;
+}
+.ft-main-item > a {
+  display: block;
+}
+.icons {
+  color: rgb(14, 11, 11);
+  margin-top: 60px;
+  margin-left: 150px;
+}
+.icons > i {
+  margin: 10px;
 }
