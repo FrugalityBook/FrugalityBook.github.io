@@ -16,7 +16,6 @@ bookInfor.map((item,index) => {
           <a><img src="${item.bookLink}" alt="book"></a>
           <h4>Title: ${item.bookTitle}</h4>
           <span>Author: ${item.bookAuthor}</span><br>
-          <span>Discription:${item.bookDisc}</span><br>
           <span><b style="color:red;">Price from : ${item.bookPrice}$</b></span>
       </div>
 `;
