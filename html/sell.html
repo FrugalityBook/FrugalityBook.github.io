@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,8 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sell</title>
   <link rel="shortcut icon" href="/assets/favicon.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/index.css" />
+  <title>Sell</title>
 </head>
 
 <body>
@@ -29,12 +28,21 @@
           margin: 0px;
           box-sizing: 0px;
         }
+        body{
+          background-image: url('https://www.heraldnet.com/wp-content/uploads/2020/07/22162343_web1_TSR-Nature-Books-edh-200726.jpg');
+          background-repeat: no-repeat;
+          background-size:cover;
+        }
         form {
           margin-top: 5%;
           text-align: center;
           outline: none;
-          background-repeat: no-repeat;
+          background:linear-gradient(to left,rgba(76, 76, 235,0.5),rgba(236, 200, 133,0.4));
+          margin : 5px 300px;
+          padding:50px 5px;
+          border-radius: 15px;
         }
+
         .form>input {
           width: 500px;
           height: 40px;
@@ -60,26 +68,16 @@
           padding: 8px;
           width: 200px;
         }
-        span{
-          font-size: 25pt;
-        }
-        body{
-          background-image: url('https://www.heraldnet.com/wp-content/uploads/2020/07/22162343_web1_TSR-Nature-Books-edh-200726.jpg');
-        }
       </style>
     </head>
 
     <body>
-      <form>
-        <!-- <img src="https://www.heraldnet.com/wp-content/uploads/2020/07/22162343_web1_TSR-Nature-Books-edh-200726.jpg" alt=""> -->
-        <span>Input your book's information</span> <br> <br> <br>
+      <form  >
         <div  class="form">
           <input id="bookLink" type="url" placeholder="Enter Book Picture(By Picture Link)" required><br><br>
           <input id="bookTitle" type="text" placeholder="Enter your Book title" required><br><br>
 
-          <input id="bookDisc" type="" placeholder="Enter Book Description" required><br><br>
-
-          <input id="bookAuthor" type="text" placeholder=" Enter Book Author" required><br><br>
+          <input id="bookDisc" type="" placeholder="Enter Book Description" required><br><br><input id="bookAuthor" type="text" placeholder=" Enter Book Author" required><br><br>
           <select id="bookStatus" class="option">
             <option value="New"><b>New</b></option>
             <option value="Good"><b>Good</b></option>
@@ -104,11 +102,11 @@
               <button onclick="getValueFromSeller()" style="background-color: rgb(107, 250, 107);"
                >Submit</button>
             </a>
-          <a href="/html/index.html"><button style="background-color: rgb(238, 107, 107);" ">Cancel</button></a>
+          <button style="background-color: rgb(238, 107, 107);" type="cancel">Cancel</button>
         </div>
         <div class="conditon" style="font-size: 20px;">
           <span>You will get benefit <span style="color:rgb(238, 57, 12)">90%</span> of your product's price.<br>If you
-            disagree this condition, you can cancel your decision.<br><span style="color:rgb(235, 152, 29)">Thank for
+            disagree this condition, you can cancel your decision.<br><span style="color:rgb(235, 29, 29)">Thank for
               using our website!!!</span> </span>
         </div>
         <div id="hello">
@@ -152,8 +150,6 @@ localStorage.setItem("books", "[]")
      var Book=JSON.parse(localStorage.getItem("books"))
       console.log(Book);
     </script>
-  <script>
-  </script>
     
   </body>
 
