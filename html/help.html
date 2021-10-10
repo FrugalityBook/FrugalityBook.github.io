@@ -91,12 +91,12 @@
             console.log("Success", res.status);
             document.getElementsByTagName("form")[0].reset();
             document.getElementById("result").innerHTML =
-              " Great You Sended it Successfully!!";
+              "Thank you for contacting us.";
           })
           .catch((err) => {
             console.log("Error", err);
             document.getElementById("result").innerHTML =
-              " Sorry!! You Sended it not Successfully!!";
+              "Message sent unsuccessfully";
           });
       }
     </script>
