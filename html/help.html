@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/assets/favicon.jpg" type="image/x-icon" />
+    <title>Help</title>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("user_kJ6zGxobV55p9Ge8CPBC6");
+      })();
+    </script>
+    <style>
+      body {
+        background-image: url("https://www.graphicpanic.com/images/book-powerpoint-background.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .form {
+        width: 700px;
+        height: 600px;
+        background-color: rgba(149, 205, 238, 0.5);
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        padding: 50px;
+      }
+      .form > input,
+      textarea {
+        height: 50px;
+        width: 500px;
+        font-size: 20px;
+        border: 1px solid bisque;
+        padding-left: 5px;
+        outline: none;
+      }
+    </style>
+    <title>Activity</title>
+  </head>
+
+  <body>
+    <form onsubmit="sendEmail()" class="form">
+      <input
+        type="email"
+        name="email"
+        placeholder="Enter your email"
+        required
+      /><br /><br />
+      <input
+        type="text"
+        name="fullName"
+        placeholder="Enter your fullname"
+        required
+      /><br /><br />
+      <input
+        type="tel"
+        name="tel"
+        placeholder="Enter your phone number"
+        required
+      /><br /><br />
+      <textarea
+        name="message"
+        placeholder="Write you problem here..."
+      ></textarea
+      ><br /><br />
+      <input type="submit" value="Send" /><br /><br /><br /><br />
+      <div id="result" style="font-size: 20px">
+        You will get a message after you send form whether you send it success
+        or not
+      </div>
+    </form>
+    <br />
+    <script>
+      function sendEmail() {
+        event.preventDefault();
+
+        emailjs
+          .sendForm(
+            "BootCamp",
+            "template_fo4blse",
+            document.getElementsByTagName("form")[0]
+          )
+          .then((res) => {
+            console.log("Success", res.status);
+            document.getElementsByTagName("form")[0].reset();
+            document.getElementById("result").innerHTML =
+              " Great You Sended it Successfully!!";
+          })
+          .catch((err) => {
+            console.log("Error", err);
+            document.getElementById("result").innerHTML =
+              " Sorry!! You Sended it not Successfully!!";
+          });
+      }
+    </script>
+  </body>
+</html>

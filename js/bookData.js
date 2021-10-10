@@ -39,7 +39,7 @@ var bookInfor = [
     title: "Green Mile",
     author: "Stephen King",
     price: "10$",
-    category: "Crime",
+    category: "Horror",
   },
   {
     url: "http://prodimage.images-bn.com/pimages/9780345806789_p0_v2_s1200x630.jpg",
@@ -75,6 +75,34 @@ var bookInfor = [
     author: "Stephen King",
     price: "10$",
     category: "Romance",
+  },
+  {
+    url: "https://m.media-amazon.com/images/I/812jTyNSu1L._AC_UY218_.jpg",
+    title: "Can't Hurt Me",
+    author: "David Goggins",
+    price: "10$",
+    category: "Motivation",
+  },
+  {
+    url: "https://m.media-amazon.com/images/I/811oWX6bKES._AC_UY218_.jpg",
+    title: "Unwinding Anxiety",
+    author: "Judson Brewer",
+    price: "10$",
+    category: "Motivation",
+  },
+  {
+    url: "https://m.media-amazon.com/images/I/91lOmoKT38L._AC_UY218_.jpg",
+    title: "Atomic Habits",
+    author: "James Clear",
+    price: "10$",
+    category: "Motivation",
+  },
+  {
+    url: "https://m.media-amazon.com/images/I/91ta1HTUZjL._AC_UY218_.jpg",
+    title: "The Four Agreements",
+    author: "JDon Miguel Ruiz and Janet Mills",
+    price: "10$",
+    category: "Motivation",
   },
 ];
 var getElement = document.getElementsByClassName("pic")[0];
